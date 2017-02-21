@@ -1,0 +1,36 @@
+{
+  "name": "hexlet_project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "./node_modules/babel-cli/bin/babel-node.js",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Svawek/project-lvl1-s69.git"
+  },
+  "keywords": [
+    "hexlet",
+    "project",
+    "project1"
+  ],
+  "author": "Grebinchyk Slava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Svawek/project-lvl1-s69/issues"
+  },
+  "homepage": "https://github.com/Svawek/project-lvl1-s69#readme",
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-preset-env": "*",
+    "babel-preset-stage-0": "*"
+  },
+  "bin": {
+    "brain-games": "dist/bin/brain-games.js"
+  }
+}
